@@ -352,7 +352,14 @@ text-align: center;
 }
 
 
-.card-banner { background: var(--silver-chalice); }
+.card-banner { 
+  background: var(--silver-chalice); 
+  height: 100%;
+}
+
+.card-banner a{ 
+  height: 100%;
+}
 
 :is(.popular, .blog) .section-subtitle {
   text-align: center;
@@ -375,6 +382,10 @@ text-align: center;
   box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.1);
   border-radius: var(--radius-6);
   overflow: hidden;
+}
+
+.popular-card{
+  height: 645px;
 }
 
 :is(.popular, .blog) .card-banner { position: relative; }
@@ -577,6 +588,7 @@ text-align: center;
   position: relative;
   border-radius: var(--radius-6);
   overflow: hidden;
+  height: 100%;
 }
 .destination-card::after {
   content: "";
@@ -776,6 +788,9 @@ body{
 .btn-link:is(:hover, :focus) { color: var(--oxford-blue);
  }
 
+ .blog-card{
+  height: 580px;
+ }
 
 
 
@@ -830,6 +845,7 @@ body{
   top: 0;
   right: 0;
   bottom: 0;
+  transition: all .5s;
 }
 .newsletter-form .btn-primary:is(:hover, :focus) {
   --background: var(--viridian-green);
@@ -1215,4 +1231,19 @@ body{
 
   .about .container { grid-template-columns: 0.7fr 1fr; }
 
+}
+
+
+.card-banner-popular{
+  height: 45%;
+  position: relative;
+}
+
+.card-banner-popular a{
+  height: 100%;
+}
+
+.newsletter-form .subscribe-btn:hover{
+  background-color: #fff;
+  color: var(--viridian-green);
 }
