@@ -1,0 +1,37 @@
+#myTable{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#myTable thead{
+    border-bottom: 2px solid black;
+}
+
+#myTable thead tr{
+    font-size: 22px;
+}
+
+#myTable thead tr th{
+    padding: 10px 0;
+}
+
+#myTable tbody tr{
+    border-bottom: .2px solid black;
+}
+
+#myForm input,
+#myForm select{
+    width: 100%;
+}
+
+.layer{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    display: none;
+}
